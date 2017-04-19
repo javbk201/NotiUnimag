@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Configuración</title>
+  </head>
+  <body>
+    <div>
+      <script type="text/javascript">
+      var mydate=new Date()
+      var year=mydate.getYear()
+      if (year < 1000)
+      year+=1900
+      var day=mydate.getDay()
+      var month=mydate.getMonth()
+      var daym=mydate.getDate()
+      if (daym<10)
+      daym="0"+daym
+      var dayarray=new Array("Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sabado")
+      var montharray=new
+
+      Array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre")
+      document.write("<small><font color='000080' face='Arial'>"+dayarray[day]+" "+daym+" de "+montharray[month]+" de "+year+"</font></small>")
+      </script>
+    </div>
+    <h1><strong>Configuración</strong></h1>
+    <div class="">
+      <a href="index.html">
+        <button style="	border:none;
+      	   color: white;
+      	   background: white;
+      	   padding: 10px;
+      	   font-size: 18px;
+      	   border-radius: 10px;
+      	   position: relative;
+           box-sizing: border-box;
+           transition: all 500ms ease;"
+           type="button" name="button">
+         <img src="boton-atras.jpg" alt="">
+        </button>
+      </a>
+    </div>
+    <menu>
+    </menu>
+  </body>
+</html>
